@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SRM:SRMmodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SRM="http://www.amcl.tuc.gr/aseme/metamodels/SRM">
+  <activities name="ReceiveServiceRequest"/>
+  <activities name="ProcessRequest"/>
+  <activities name="SendServiceResponse"/>
+  <roles activities="//@activities.0 //@activities.1 //@activities.2" 
+liveness="ServiceProvider =ReceiveServiceRequest.ProcessRequest.SendServiceResponse" name="ServiceProvider"/>
+</SRM:SRMmodel>
